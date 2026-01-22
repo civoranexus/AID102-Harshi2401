@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmer Registration – SoilSense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>SoilSense</h1>
+    <p>Farmer & Farm Registration</p>
+</header>
+
+<main class="container">
+
+    <div class="card">
+        <h2>Farm Details</h2>
+
+        <form method="post" action="/register">
+
+            <label for="name">Farmer Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter farmer name" required>
+
+            <label for="crop">Crop Type</label>
+            <select id="crop" name="crop" required>
+                <option value="">-- Select Crop --</option>
+                <option value="Rice">Rice</option>
+                <option value="Wheat">Wheat</option>
+                <option value="Maize">Maize</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Pulses">Pulses</option>
+            </select>
+
+            <label for="land_size">Land Size (in acres)</label>
+            <input type="number" id="land_size" name="land_size" step="0.1" placeholder="e.g. 2.5" required>
+
+            <button type="submit" class="btn">Register Farm</button>
+
+        </form>
+
+        <p class="note">
+            Farm information is used to generate personalized and AI-driven
+            soil health analysis.
+        </p>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 SoilSense | Civora Nexus Pvt
+    </footer>
+    </body>
+    </html>
