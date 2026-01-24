@@ -1,0 +1,84 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main container */
+.container {
+    padding: 30px;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Card layout */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+/* Form elements */
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Button */
+.btn {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #256428;
+}
+
+/* Helper note */
+.note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e0e0e0;
+    font-size: 14px;
+    margin-top: 30px;
+}
