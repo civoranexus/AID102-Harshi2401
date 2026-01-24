@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soil Data Input – SoilSense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="soil_input.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>SoilSense</h1>
+    <p>Soil Test Data Entry</p>
+</header>
+
+<main class="container">
+
+    <div class="card">
+        <h2>Enter Soil Test Values</h2>
+
+        <form method="post" action="/soil-input">
+
+            <label for="farmer_id">Farmer ID</label>
+            <input type="number" id="farmer_id" name="farmer_id"
+                   placeholder="Enter registered farmer ID" required>
+
+            <label for="ph">Soil pH Level</label>
+            <input type="number" id="ph" name="ph" step="0.1" min="0" max="14"
+                   placeholder="e.g. 6.5" required>
+
+            <label for="nitrogen">Nitrogen (kg/ha)</label>
+            <input type="number" id="nitrogen" name="nitrogen" step="0.1"
+                   placeholder="e.g. 120" required>
+
+            <label for="phosphorus">Phosphorus (kg/ha)</label>
+            <input type="number" id="phosphorus" name="phosphorus" step="0.1"
+                   placeholder="e.g. 45" required>
+
+            <label for="potassium">Potassium (kg/ha)</label>
+            <input type="number" id="potassium" name="potassium" step="0.1"
+                   placeholder="e.g. 180" required>
+
+            <label for="organic_matter">Organic Matter (%)</label>
+            <input type="number" id="organic_matter" name="organic_matter"
+                   step="0.1" placeholder="e.g. 2.8" required>
+
+            <button type="submit" class="btn">Submit Soil Data</button>
+
+        </form>
+
+        <p class="note">
+            Enter values as per soil laboratory reports.
+            These inputs are analyzed by the AI engine to generate
+            soil health insights and recommendations.
+        </p>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 SoilSense | Civora Nexus Pvt. Ltd.</p>
+</footer>
+
+</body>
+</html>
