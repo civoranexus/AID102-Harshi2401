@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soil Health Analysis – SoilSense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="analysis.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>SoilSense</h1>
+    <p>AI-Based Soil Health Analysis Report</p>
+</header>
+
+<main class="container">
+
+    <!-- Overall Soil Health -->
+    <section class="card">
+        <h2>Overall Soil Health Status</h2>
+        <p><strong>Status:</strong> <span id="soilStatus">--</span></p>
+        <p><strong>Soil Type:</strong> <span id="soilType">--</span></p>
+        <p><strong>AI Confidence:</strong> <span id="confidence">--</span></p>
+    </section>
+
+    <!-- pH Analysis -->
+    <section class="card">
+        <h2>Soil pH Analysis</h2>
+        <p>Observed pH: <strong><span id="phValue">--</span></strong></p>
+        <p>Condition: <strong><span id="phCondition">--</span></strong></p>
+        <p class="explanation" id="phExplanation">AI explanation will appear here.</p>
+    </section>
+
+    <!-- Nutrient Analysis -->
+    <section class="card">
+        <h2>Nutrient Analysis</h2>
+
+        <table>
+            <tr>
+                <th>Nutrient</th>
+                <th>Value</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Nitrogen (N)</td>
+                <td><span id="nitrogenValue">--</span></td>
+                <td><span id="nitrogenStatus">--</span></td>
+            </tr>
+            <tr>
+                <td>Phosphorus (P)</td>
+                <td><span id="phosphorusValue">--</span></td>
+                <td><span id="phosphorusStatus">--</span></td>
+            </tr>
+            <tr>
+                <td>Potassium (K)</td>
+                <td><span id="potassiumValue">--</span></td>
+                <td><span id="potassiumStatus">--</span></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- AI Recommendations -->
+    <section class="card ai-card">
+        <h2>AI Recommendations</h2>
+        <ul id="recommendations">
+            <li>AI-generated recommendations will appear here.</li>
+        </ul>
+        <p class="ai-note">
+            Recommendations are generated based on soil condition, crop type,
+            and nutrient requirements.
+        </p>
+    </section>
+
+    <!-- Alerts -->
+    <section class="card">
+        <h2>Alerts & Warnings</h2>
+        <div id="alerts">
+            <p>No critical alerts detected.</p>
+        </div>
+    </section>
+
+    <!-- Trend Analysis -->
+    <section class="card">
+        <h2>Soil Health Trend Summary</h2>
+        <p id="trendSummary">
+            Trend insights will be shown after multiple soil tests.
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 SoilSense | Civora Nexus Pvt. Ltd.</p>
+</footer>
+
+</body>
+</html>
